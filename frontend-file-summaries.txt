@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Main app component rendering an interactive SVG smiley face with mouse-tracking pupils, blink animation, and a new interactive mouth that opens and bites when hovered — cycling through 'smile', 'open' (with teeth and tongue), and 'bitten' (flat closed) states, staying bitten until hovered again.",
+  "frontend/src/index.css": "Global styles establishing a deep dark background with warm radial gradient, OKLCH color tokens for the dark theme, smiley SVG sizing/glow effects, and footer styling.",
+  "frontend/tailwind.config.js": "Tailwind config extended with custom face/gold color tokens, serif display font family, glow box shadows, and the standard shadcn/ui token mappings."
+}

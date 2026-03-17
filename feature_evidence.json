@@ -1,0 +1,22 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-mouth-hover-triggered-bite-animation-to-the-svg-smiley-face-in-app-tsx-the-current-mouth-is-a-static-smile-path-d-m-140-255-q-200-315-260-255-replace-it-with-an-interactive-mouth-component-that-1-detects-when-the-mouse-enters-the-mouth-region-2-on-mouse-enter-plays-a-quick-open-and-bite-animation-the-mouth-opens-wide-e-g-reveals-an-open-ellipse-or-arc-showing-teeth-interior-for-150-200ms-then-snaps-shut-3-after-biting-the-mouth-stays-in-a-closed-flat-or-slightly-frowning-state-rather-than-the-original-smile-4-when-the-mouse-enters-the-mouth-region-again-while-it-is-closed-bitten-it-repeats-the-open-bite-then-stay-closed-sequence-the-bite-state-resets-only-on-the-next-mouse-enter-use-a-react-state-variable-e-g-mouthstate-smile-open-bitten-and-an-svg-path-or-g-to-represent-the-three-mouth-states-the-mouth-s-interactive-hit-area-should-use-a-transparent-svg-ellipse-or-rect-overlaid-on-the-mouth-region-to-reliably-capture-onmouseenter-events",
+      "featureTitle": "Add a mouth hover-triggered bite animation to the SVG smiley face in App.tsx. The current mouth is a static smile path (d=\"M 140 255 Q 200 315 260 255\"). Replace it with an interactive mouth component that: (1) detects when the mouse enters the mouth region, (2) on mouse-enter, plays a quick 'open and bite' animation — the mouth opens wide (e.g., reveals an open ellipse or arc showing teeth/interior) for ~150–200ms, then snaps shut, (3) after biting, the mouth stays in a closed/flat or slightly-frowning state rather than the original smile, (4) when the mouse enters the mouth region again while it is closed/bitten, it repeats the open-bite-then-stay-closed sequence. The bite state resets only on the next mouse-enter. Use a React state variable (e.g., `mouthState: 'smile' | 'open' | 'bitten'`) and an SVG `<path>` or `<g>` to represent the three mouth states. The mouth's interactive hit area should use a transparent SVG `<ellipse>` or `<rect>` overlaid on the mouth region to reliably capture `onMouseEnter` events.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

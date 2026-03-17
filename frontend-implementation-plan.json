@@ -1,0 +1,26 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Mouth bite animation on mouse hover",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Add interactive mouth component with hover-triggered bite animation that cycles through smile, open, and bitten states",
+      "acceptanceCriteria": [
+        "When the mouse cursor moves over the mouth area, the mouth visibly opens (shows interior/teeth) for approximately 150–200ms.",
+        "After the open phase, the mouth animates to a closed/bitten position and remains there.",
+        "The closed/bitten mouth does not revert to the original smile on its own.",
+        "Moving the mouse over the closed mouth again triggers the full open-bite-closed sequence again.",
+        "The open and bite animation uses smooth SVG path transitions or rapid state changes that feel snappy and playful.",
+        "The mouse hit area for the mouth is large enough to be reliably triggered without pixel-perfect cursor placement."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Replace the static smile path (lines 342–349) with an interactive Mouth component that implements the bite animation. Add a React state variable `mouthState` with three values: 'smile' (initial curved smile), 'open' (wide open mouth showing interior/teeth), and 'bitten' (closed/flat or slight frown). Create a transparent SVG hit area (ellipse or rect centered around y=255, covering the mouth region) with an onMouseEnter handler. On mouse-enter, trigger a state transition: smile → open (hold for 150–200ms) → bitten. When in 'bitten' state and mouse-enter fires again, repeat the open → bitten sequence. Use SVG <path> elements with distinct d attributes for each state, and optionally add interior elements (e.g., a white ellipse for teeth/interior) visible only in the 'open' state. Keep the mouth component self-contained within App.tsx alongside the existing Eye component pattern. Ensure the existing eye, blink, and pupil-tracking logic (lines 1–266) remains untouched."
+        }
+      ]
+    }
+  ]
+}

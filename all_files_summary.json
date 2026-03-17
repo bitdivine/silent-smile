@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend canister placeholder with no implemented methods.",
+  "feature_evidence.json": "Feature evidence report documenting the hover-triggered bite animation feature for the SVG smiley face mouth in App.tsx, with high confidence and a reference to test ID REQ-5.",
+  "frontend-file-summaries.txt": "JSON blob containing one-line summaries of the three main frontend source files: App.tsx, index.css, and tailwind.config.js.",
+  "frontend/index.css": "Root Tailwind CSS entry point defining OKLCH-based design tokens for light and dark themes, including colors for backgrounds, borders, charts, and sidebar components.",
+  "frontend/index.html": "Minimal HTML shell for the React app titled 'Smiley Face', mounting the app into a root div and loading the main TSX entry point.",
+  "frontend/src/App.tsx": "Main React component rendering an interactive SVG smiley face with mouse-tracking pupils, blink animation, and a three-state interactive mouth ('smile', 'open', 'bitten') that triggers a bite animation on hover.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that creates and caches an ICP backend actor (anonymous or authenticated) using React Query, invalidating dependent queries whenever the actor or identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom React hook and context provider managing Internet Identity authentication via AuthClient, exposing login/logout functions, identity state, and login status.",
+  "frontend/src/index.css": "Global styles for the smiley face app, establishing a dark warm background with radial gradient, OKLCH color tokens, SVG glow effects, and footer layout styling.",
+  "frontend/src/main.tsx": "React app entry point that wraps the App component with QueryClientProvider and InternetIdentityProvider before mounting to the DOM.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom face/gold color tokens, serif font families, glow box shadows, and standard shadcn/ui OKLCH token mappings.",
+  "project_state.json": "Tracks project state and feature history for an interactive SVG smiley face app, including features like mouse-tracking pupils, blinking animation, dark theme, and a mouth bite animation triggered by hover."
+}
